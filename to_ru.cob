@@ -139,3 +139,66 @@ PROCEDURE DIVISION.
 
    DISPLAY "Morse Code: " WS-MORSE.
    STOP RUN.
+
+FIND-MORSE.
+   EVALUATE WS-CHAR
+       WHEN "А" MOVE ".-    " TO WS-CODE
+       WHEN "Б" MOVE "-...  " TO WS-CODE
+       WHEN "В" MOVE ".--   " TO WS-CODE
+       WHEN "Г" MOVE "--.   " TO WS-CODE
+       WHEN "Д" MOVE "-..   " TO WS-CODE
+       WHEN "Е" MOVE ".     " TO WS-CODE
+       WHEN "Ё" MOVE ".     " TO WS-CODE
+       WHEN "Ж" MOVE "...-- " TO WS-CODE
+       WHEN "З" MOVE "--..  " TO WS-CODE
+       WHEN "И" MOVE "..    " TO WS-CODE
+       WHEN "Й" MOVE ".---  " TO WS-CODE
+       WHEN "К" MOVE "-.-   " TO WS-CODE
+       WHEN "Л" MOVE ".-..  " TO WS-CODE
+       WHEN "М" MOVE "--    " TO WS-CODE
+       WHEN "Н" MOVE "-.    " TO WS-CODE
+       WHEN "О" MOVE "---   " TO WS-CODE
+       WHEN "П" MOVE ".--.  " TO WS-CODE
+       WHEN "Р" MOVE ".-.   " TO WS-CODE
+       WHEN "С" MOVE "...   " TO WS-CODE
+       WHEN "Т" MOVE "-     " TO WS-CODE
+       WHEN "У" MOVE "..-   " TO WS-CODE
+       WHEN "Ф" MOVE "..-.  " TO WS-CODE
+       WHEN "Х" MOVE "....  " TO WS-CODE
+       WHEN "Ц" MOVE "-.-.  " TO WS-CODE
+       WHEN "Ч" MOVE "---.  " TO WS-CODE
+       WHEN "Ш" MOVE "----  " TO WS-CODE
+       WHEN "Щ" MOVE "--.-  " TO WS-CODE
+       WHEN "Ъ" MOVE "--.-- " TO WS-CODE
+       WHEN "Ы" MOVE "-.--. " TO WS-CODE
+       WHEN "Ь" MOVE "-..-  " TO WS-CODE
+       WHEN "Э" MOVE "..-.. " TO WS-CODE
+       WHEN "Ю" MOVE "..--  " TO WS-CODE
+       WHEN "Я" MOVE ".-.-  " TO WS-CODE
+       WHEN "1" MOVE ".---- " TO WS-CODE
+       WHEN "2" MOVE "..--- " TO WS-CODE
+       WHEN "3" MOVE "...-- " TO WS-CODE
+       WHEN "4" MOVE "....- " TO WS-CODE
+       WHEN "5" MOVE "..... " TO WS-CODE
+       WHEN "6" MOVE "-.... " TO WS-CODE
+       WHEN "7" MOVE "--... " TO WS-CODE
+       WHEN "8" MOVE "---.. " TO WS-CODE
+       WHEN "9" MOVE "----. " TO WS-CODE
+       WHEN "0" MOVE "----- " TO WS-CODE
+       WHEN " " MOVE "| " TO WS-CODE
+       WHEN "." MOVE ".-.-.- " TO WS-CODE
+       WHEN "," MOVE "--..-- " TO WS-CODE
+       WHEN "?" MOVE "..--.. " TO WS-CODE
+       WHEN "'" MOVE ".----. " TO WS-CODE
+       WHEN "!" MOVE "-.-.-- " TO WS-CODE
+       WHEN "/" MOVE "-..-." TO WS-CODE
+       WHEN "(" MOVE "-.--." TO WS-CODE
+       WHEN ")" MOVE "-.--.-" TO WS-CODE
+       WHEN "&" MOVE ".-..." TO WS-CODE
+       WHEN ":" MOVE "---..." TO WS-CODE
+       WHEN ";" MOVE "-.-.-." TO WS-CODE
+       WHEN "=" MOVE "-...-" TO WS-CODE
+       WHEN OTHER MOVE "     " TO WS-CODE
+   END-EVALUATE.
+
+   EXIT.
